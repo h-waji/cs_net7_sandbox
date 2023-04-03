@@ -9,3 +9,9 @@ bob.SayHi();
 
 Point point = new Point(4, 3);
 point.GetInfo();
+
+Nokonoko noko = new Nokonoko();
+noko.GetInfo();
+
+Patapata pata = new Patapata();
+pata.GetInfo();
