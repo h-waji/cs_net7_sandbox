@@ -6,3 +6,6 @@ tom.SayHi();
 AdminUser bob = new AdminUser("Bob");
 bob.SayHello();
 bob.SayHi();
+
+Point point = new Point(4, 3);
+point.GetInfo();
