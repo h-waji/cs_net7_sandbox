@@ -1,7 +1,9 @@
-﻿Console.WriteLine("使いづらいけど優秀なVisual Studio");
-
-User tom = new User("Tom");
+﻿User tom = new User("Tom");
 tom.SayHi();
+
+AdminUser bob = new AdminUser("Bob");
+bob.SayHello();
+bob.SayHi();
 
 class User
 {
@@ -14,8 +16,23 @@ class User
         this.name = name;
     }
 
-    public void SayHi()
+    public virtual void SayHi()
     {
         Console.WriteLine($"Hi. I'm {name}");
+    }
+}
+
+class AdminUser: User
+{
+    public AdminUser(string name): base(name) { }
+
+    public void SayHello()
+    {
+        Console.WriteLine($"Hello. I'm {name}");
+    }
+
+    public override void SayHi()
+    {
+        Console.WriteLine($"[ADMIN] Hi. I'm {name}");
     }
 }
