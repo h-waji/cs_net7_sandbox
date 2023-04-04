@@ -1,6 +1,6 @@
 ﻿namespace cs_net7_sandbox
 {
-    class User
+    class User: ISharable
     {
         public string name;
 
@@ -14,6 +14,11 @@
         public virtual void SayHi()
         {
             Console.WriteLine($"Hi. I'm {name}");
+        }
+
+        public void Share()
+        {
+            Console.WriteLine("now sharing...");
         }
     }
 }
