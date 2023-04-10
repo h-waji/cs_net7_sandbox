@@ -33,3 +33,10 @@ foreach(var result in results)
 {
     Console.WriteLine(result);
 }
+
+// ----- Generic -----
+MyData<string> s = new MyData<string>();
+s.WriteThreeTimes("Hello");
+
+MyData<double> d = new MyData<double>();
+d.WriteThreeTimes(77.77);
