@@ -22,3 +22,14 @@ hamsters[0] = "Hamham1";
 hamsters[1] = "Hamham2";
 hamsters[2] = "Hamham3";
 Console.WriteLine(hamsters[1]);
+
+// ----- LINQ -----
+List<double> prices = new List<double>() { 66.6, 55.5, 44.4, 33.3 };
+var results = prices
+            .Select(n => n * 1.10)
+            .Where(n => n > 50);
+
+foreach(var result in results)
+{
+    Console.WriteLine(result);
+}
