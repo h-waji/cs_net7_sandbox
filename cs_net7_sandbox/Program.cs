@@ -16,3 +16,9 @@ noko.GetInfo();
 
 Patapata pata = new Patapata();
 pata.GetInfo();
+
+Team hamsters = new Team();
+hamsters[0] = "Hamham1";
+hamsters[1] = "Hamham2";
+hamsters[2] = "Hamham3";
+Console.WriteLine(hamsters[1]);
